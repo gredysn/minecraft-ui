@@ -88,5 +88,16 @@ void ItemContainer::rightSwapWith(ItemContainer& playerContainer) {
 void ItemContainer::draw() {
     if (isMouseHovering()) { 
         this->hoverHighlighter.draw(this->collider.getMinX(),this->collider.getMinY());
+    } 
+    //In this if statement we're checking that the container isn't empty and that it's a valid item (that it exists)
+    if(!this->isEmpty()){
+        this->currentItem.draw(this->collider.getMinX(), this->collider.getMinY());
+
     }
+    //So if both conditions are true the "items" are going to be drawn where they're supposed to.
+    //But this if statement alone doesn't display the items since the draw() wasnt in the item.h class
+    //So we also added it
+
+
+
 }
