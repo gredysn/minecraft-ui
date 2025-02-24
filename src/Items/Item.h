@@ -81,6 +81,10 @@ class Item {
             this->sprite = airSpr;
             this->name = "air";
         }
+        //We added this missing function so that this Item class finally is able to draw on the screen using its sprite.
+        void draw(int x, int y){
+            sprite.draw(x, y);
+        }
 
         // Useful operators that enable direct comparison of items.
 
