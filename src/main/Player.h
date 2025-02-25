@@ -38,7 +38,7 @@ class Player {
                 }
             }
             // Create the StateButtons.
-            const int VERT_ALIGN = 650;  
+            const int VERT_ALIGN = 570;  // The vertical alignment was changed
             const int HORZ_ALIGN = 32;
             const int DISTANCE_BETWEEN_BUTTONS = 86;
             StateButton chestStateButton{"chest", HORZ_ALIGN + (0 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
