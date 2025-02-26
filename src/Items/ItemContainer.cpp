@@ -92,12 +92,17 @@ void ItemContainer::draw() {
     //In this if statement we're checking that the container isn't empty and that it's a valid item (that it exists)
     if(!this->isEmpty()){
         this->currentItem.draw(this->collider.getMinX(), this->collider.getMinY());
-
-    }
+    } 
     //So if both conditions are true the "items" are going to be drawn where they're supposed to.
     //But this if statement alone doesn't display the items since the draw() wasnt in the item.h class
-    //So we also added it
+    //So we also added it 
 
-
-
-}
+    if(this->currentItemCount > 1) {
+        ofDrawBitmapStringHighlight(std:: to_string(this->currentItemCount), this->collider.getMinX()+56, this->collider.getMinY()+59);
+        }
+    // This makes it so that the int of currentItemCount is drawn and shown on screen.
+    if(this->mouseHovering == true && !this->isEmpty()) {
+        ofDrawBitmapStringHighlight(this->currentItem.getName(), this->collider.getMinX()+50, this->collider.getMinY()+30);
+    }
+    // This makes it so that when the mouse is hovering over the item and it is not empty, it will display the item name.
+} 
