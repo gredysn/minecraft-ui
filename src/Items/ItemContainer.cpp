@@ -98,7 +98,7 @@ void ItemContainer::draw() {
     //So we also added it 
 
     if(this->currentItemCount > 1) {
-        ofDrawBitmapStringHighlight(std:: to_string(this->currentItemCount), this->collider.getMinX()+56, this->collider.getMinY()+59);
+        ofDrawBitmapStringHighlight(std:: to_string(this->currentItemCount), this->collider.getMinX()+52, this->collider.getMinY()+58);
         }
     // This makes it so that the int of currentItemCount is drawn and shown on screen.
     if(this->mouseHovering == true && !this->isEmpty()) {
