@@ -42,7 +42,7 @@ class Player {
             const int HORZ_ALIGN = 32;
             const int DISTANCE_BETWEEN_BUTTONS = 86;
             StateButton chestStateButton{"chest", HORZ_ALIGN + (0 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
-            StateButton craftingStateButton{"craft", HORZ_ALIGN + (1 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
+            StateButton craftingStateButton{"crafting", HORZ_ALIGN + (1 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
             StateButton furnaceStateButton{"furnace", HORZ_ALIGN + (2 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
             StateButton generatorStateButton{"generator", HORZ_ALIGN + (3 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
 
