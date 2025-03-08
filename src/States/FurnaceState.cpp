@@ -93,9 +93,10 @@ void FurnaceState::mousePressed(int x, int y, int button) {
         if (this->getPlayer()->getCursorContainer().isEmpty() || isItemSmeltable(this->getPlayer()->getCursorContainer().getCurrentItem())) this->burningContainer.rightMouseClicked(x,y,this->getPlayer()->getCursorContainer());
     }
 };
-
+//realizando cambios
+//añadiendo los items que faltan (case #)
 void FurnaceState::addSmeltableItems() {
-    this->smeltableItems = {2};
+    this->smeltableItems = {2, 31, 32, 38, 43, 45, 53};
 }
 
 int FurnaceState::getResultantItemNumber(Item itm) {
