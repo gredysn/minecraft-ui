@@ -381,6 +381,58 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.first = instantiator->getItemFromNumber(56);
             result.second = 1;
         } 
+
+
+        //1
+        if (grid == vector<int> // Vibranium Sword
+            {50, 50, 50,
+            50, 18, 50,
+            50, 42, 50}
+        ) {
+        result.first = instantiator->getItemFromNumber(57);
+        result.second = 1; }
+
+            //2
+            if (grid == vector<int> // Vibranium Pickaxe
+                {50, 50, 50,
+                50, 8, 50,
+                50, 42, 50}
+            ) {
+            result.first = instantiator->getItemFromNumber(59);
+            result.second = 1; }
+
+
+            //3
+            if (grid == vector<int> // Vibranium shovel
+                {50, 50, 50,
+                50, 13, 50,
+                50, 42, 50}
+            ) {
+            result.first = instantiator->getItemFromNumber(58);
+            result.second = 1; }
+
+
+            //4
+            if (grid == vector<int> // Vibranium Axe
+                {50, 50, 50,
+                50, 23, 50,
+                50, 42, 50}
+            ) {
+            result.first = instantiator->getItemFromNumber(60);
+            result.second = 1; }
+
+
+            //5
+            if (grid == vector<int> // Vibranium hoe
+                {50, 50, 50,
+                50, 28, 50,
+                50, 42, 50}
+            ) {
+            result.first = instantiator->getItemFromNumber(61);
+            result.second = 1; }
+
+
+
         return result;    
 }
 
