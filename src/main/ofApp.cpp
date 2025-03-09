@@ -73,6 +73,11 @@ void ofApp::giveItems() {
     this->chestState->addItem(instantiator->getItemFromNumber(15), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(20), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(25), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(57), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(58), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(59), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(60), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(61), 1);
 }
 
 
