@@ -104,5 +104,19 @@ class ItemHandler {
             itemList.push_back(Item(59, 64, 0, getSpriteFromSheet(11, 10), "Vibranium Pickaxe"));
             itemList.push_back(Item(60, 64, 0, getSpriteFromSheet(12, 10), "Vibranium Axe"));
             itemList.push_back(Item(61, 64, 0, getSpriteFromSheet(13, 10), "Vibranium Hoe"));  
+            //Power Puff Girls Items
+            itemList.push_back(Item(62, 64, 0, getSpriteFromSheet(0, 10), "Blossom"));
+            itemList.push_back(Item(63, 64, 0, getSpriteFromSheet(1, 10), "Bubbles"));
+            itemList.push_back(Item(64, 64, 0, getSpriteFromSheet(2, 10), "Buttercup"));
+            itemList.push_back(Item(65, 64, 0, getSpriteFromSheet(3, 10), "Chemical X"));
+            itemList.push_back(Item(66, 64, 0, getSpriteFromSheet(4, 10), "Spice"));
+            itemList.push_back(Item(67, 64, 0, getSpriteFromSheet(5, 10), "Butter"));
+            itemList.push_back(Item(68, 64, 0, getSpriteFromSheet(6, 10), "Everything Nice"));
+            itemList.push_back(Item(69, 64, 0, getSpriteFromSheet(7, 10), "Bubbles"));
+            itemList.push_back(Item(70, 64, 0, getSpriteFromSheet(8, 10), "Blossom Flower"));
+
+
+
+
         }
 };

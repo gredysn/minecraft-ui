@@ -45,11 +45,17 @@ class Player {
             StateButton craftingStateButton{"crafting", HORZ_ALIGN + (1 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
             StateButton furnaceStateButton{"furnace", HORZ_ALIGN + (2 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
             StateButton generatorStateButton{"generator", HORZ_ALIGN + (3 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
+            //Bono: ppg button
+            StateButton battleStateButton{"battle", HORZ_ALIGN + (4 * DISTANCE_BETWEEN_BUTTONS), VERT_ALIGN};
+
+
 
             this->buttons.push_back(chestStateButton);
             this->buttons.push_back(craftingStateButton);
             this->buttons.push_back(furnaceStateButton);
             this->buttons.push_back(generatorStateButton);
+            //Bono: ppg button
+            this->buttons.push_back(battleStateButton);
         }
 
         /**
