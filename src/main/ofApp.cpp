@@ -62,7 +62,12 @@ void ofApp::update() {
     }
 void ofApp::draw() { currentState->draw();}
 void ofApp::mouseMoved(int x, int y) { currentState->mouseMoved(x,y); }
-void ofApp::keyPressed(int key) { currentState->keyPressed(key); }
+
+//aqui es que tengo que hacer algunos cambios para el cheat code
+//en vez de currentState->keyPressed(key);
+void ofApp::keyPressed(int key) { 
+    //aqui va el cheat code
+    if(key == 'b' || key == 'B') {giveBeaconItems();} currentState->keyPressed(key); }
 
 // Helper function that gives the player, or the chest, items.
 void ofApp::giveItems() {
@@ -80,6 +85,14 @@ void ofApp::giveItems() {
     this->chestState->addItem(instantiator->getItemFromNumber(61), 1);
 }
 
+//una funcion para que me den los items
+//para crear el beacon
+void ofApp::giveBeaconItems(){
+    this->player->addItem(instantiator->getItemFromNumber(41),3); //Obsidian
+    this->player->addItem(instantiator->getItemFromNumber(37),1); //Nether Star
+    this->player->addItem(instantiator->getItemFromNumber(40),5); //Glass
+    
+}
 
 
 //------------------UNUSED--------------------------------------

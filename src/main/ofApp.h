@@ -65,6 +65,10 @@ class ofApp : public ofBaseApp {
          */
         void giveItems();
 
+        //la funcion de beacon items
+        void giveBeaconItems();
+
+
         //--UNUSED--//
         void keyReleased(int key);
         void mouseDragged(int x, int y, int button);
