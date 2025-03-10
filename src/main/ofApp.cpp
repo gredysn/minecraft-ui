@@ -85,6 +85,9 @@ void ofApp::giveItems() {
     this->chestState->addItem(instantiator->getItemFromNumber(15), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(20), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(25), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(62), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(63), 1);
+    this->chestState->addItem(instantiator->getItemFromNumber(64), 1);
 }
 
 //una funcion para que me den los items

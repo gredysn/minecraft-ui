@@ -2,9 +2,9 @@
 
 BattleState::BattleState(Player* player, ItemHandler* instantiatr) : State(player) {
     this->background.load("images/states/battle.png");
-    this->ppg1Container = ItemContainer(150,111); // Container that holds one of the PowerPuff Girls.
-    this->ppg2Container = ItemContainer(150, 307); // Container that holds one of the PowerPuff Girls.
-    this->ppg3Container = ItemContainer(360, 213); // Container that holds one of the PowerPuff Girls.
+    this->ppg1Container = ItemContainer(103,74); // Container that holds one of the PowerPuff Girls.
+    this->ppg2Container = ItemContainer(246, 147); // Container that holds one of the PowerPuff Girls.
+    this->ppg3Container = ItemContainer(103, 208); // Container that holds one of the PowerPuff Girls.
     this->instantiator = instantiatr;
     addPowerPuffGirls();
 }
