@@ -6,6 +6,7 @@
 #include "CraftingState.h"
 #include "FurnaceState.h"
 #include "GeneratorState.h"
+#include "BattleState.h"
 using namespace std;
 
 /**
@@ -21,6 +22,8 @@ class ofApp : public ofBaseApp {
         CraftingState* craftingState; ///< Pointer to the crafting state.
         FurnaceState* furnaceState; ///< Pointer to the furnace state.
         GeneratorState* generatorState; ///< Pointer to the generator state.
+        //NEW BATTLE STATE
+        BattleState* battleState; ///< Pointer to the new battle state.
 
         ofSoundPlayer relaxingMusic; ///< Sound player for background music.
 

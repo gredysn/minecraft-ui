@@ -7,6 +7,8 @@ void ofApp::setup() {
     this->craftingState = new CraftingState(player,instantiator);
     this->furnaceState = new FurnaceState(player,instantiator);
     this->generatorState= new GeneratorState(player,instantiator);
+    //NEW BATTLE STATE
+    this->battleState = new BattleState(player, instantiator);
 
     this->relaxingMusic.load("audio/miceOnVenus.mp3");
     this->relaxingMusic.play();
@@ -51,6 +53,9 @@ void ofApp::mousePressed(int x, int y, int button) {
                 else if (stateButton.getTargetState() == "generator") {
                     this->currentState = generatorState;
                 }
+                else if (stateButton.getTargetState() == "battle") {
+                    this->currentState = battleState;
+                }
                 stateButton.playSoundEffect();
             }
         }
@@ -80,11 +85,6 @@ void ofApp::giveItems() {
     this->chestState->addItem(instantiator->getItemFromNumber(15), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(20), 1);
     this->chestState->addItem(instantiator->getItemFromNumber(25), 1);
-    this->chestState->addItem(instantiator->getItemFromNumber(57), 1);
-    this->chestState->addItem(instantiator->getItemFromNumber(58), 1);
-    this->chestState->addItem(instantiator->getItemFromNumber(59), 1);
-    this->chestState->addItem(instantiator->getItemFromNumber(60), 1);
-    this->chestState->addItem(instantiator->getItemFromNumber(61), 1);
 }
 
 //una funcion para que me den los items
