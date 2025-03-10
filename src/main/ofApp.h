@@ -67,6 +67,8 @@ class ofApp : public ofBaseApp {
 
         //la funcion de beacon items
         void giveBeaconItems();
+        //la funcion de ender tool items
+        void giveEnderToolItems();
 
 
         //--UNUSED--//
