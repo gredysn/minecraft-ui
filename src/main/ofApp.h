@@ -72,7 +72,8 @@ class ofApp : public ofBaseApp {
         void giveBeaconItems();
         //la funcion de ender tool items
         void giveEnderToolItems();
-
+        //la funcion de powerpuffgirls items
+        void givePowerPuffGirlsItems();
 
         //--UNUSED--//
         void keyReleased(int key);

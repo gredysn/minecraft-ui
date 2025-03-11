@@ -431,6 +431,47 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.first = instantiator->getItemFromNumber(61);
             result.second = 1; }
 
+                //Bono: PowerPuffGirls Recipes
+                //1 Blossom Recipe
+            if (grid == vector<int> // Vibranium hoe
+                {71, 66, 71,
+                70, 68, 70,
+                65, 65, 65}
+            ) {
+            result.first = instantiator->getItemFromNumber(62);
+            result.second = 1; }
+
+                //2 Bubbles Recipe
+            if (grid == vector<int> // Vibranium hoe
+                {71, 66, 71,
+                69, 68, 69,
+                65, 65, 65}
+            ) {
+            result.first = instantiator->getItemFromNumber(63);
+            result.second = 1; }
+
+            //2 Buttercup Recipe
+            if (grid == vector<int> // Vibranium hoe
+                {71, 66, 71,
+                67, 68, 67,
+                65, 65, 65}
+            ) {
+            result.first = instantiator->getItemFromNumber(64);
+            result.second = 1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         return result;    

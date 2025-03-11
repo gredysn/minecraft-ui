@@ -114,6 +114,7 @@ class ItemHandler {
             itemList.push_back(Item(68, 64, 0, getSpriteFromSheet(6, 10), "Everything Nice"));
             itemList.push_back(Item(69, 64, 0, getSpriteFromSheet(7, 10), "Bubbles"));
             itemList.push_back(Item(70, 64, 0, getSpriteFromSheet(8, 10), "Blossom Flower"));
+            itemList.push_back(Item(71, 64, 0, getSpriteFromSheet(14, 11), "Sugar"));
 
 
 

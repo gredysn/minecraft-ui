@@ -74,7 +74,10 @@ void ofApp::keyPressed(int key) {
     //aqui va el cheat code
     if(key == 'b' || key == 'B') {giveBeaconItems();} currentState->keyPressed(key); 
     //cheat code 2 Ender Tools
-    if(key == 'e' || key == 'E') {giveEnderToolItems();} currentState->keyPressed(key); }
+    if(key == 'e' || key == 'E') {giveEnderToolItems();} currentState->keyPressed(key); 
+   //cheat code 3 PowerPuffGirls Ingredients
+    if(key == 'p' || key == 'P') {givePowerPuffGirlsItems();} currentState->keyPressed(key); }
+
 
 // Helper function that gives the player, or the chest, items.
 void ofApp::giveItems() {
@@ -110,6 +113,17 @@ void ofApp::giveEnderToolItems(){
     this->player->addItem(instantiator->getItemFromNumber(18),1); // 1 Diamond sword
     this->player->addItem(instantiator->getItemFromNumber(13),1); // 1 Diamond shovel
     this->player->addItem(instantiator->getItemFromNumber(8),1); // 1 Diamond pickaxe
+}
+
+void ofApp::givePowerPuffGirlsItems(){
+    
+    this->player->addItem(instantiator->getItemFromNumber(65),9); //Chemical X
+    this->player->addItem(instantiator->getItemFromNumber(66),3); // Spice
+    this->player->addItem(instantiator->getItemFromNumber(67),2); // Butter
+    this->player->addItem(instantiator->getItemFromNumber(68),3); // Everything Nice
+    this->player->addItem(instantiator->getItemFromNumber(69),2); // Bubbles
+    this->player->addItem(instantiator->getItemFromNumber(70),2); // Blossom Flower
+    this->player->addItem(instantiator->getItemFromNumber(71),6); // Sugar
 }
 
 
