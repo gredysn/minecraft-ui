@@ -53,7 +53,7 @@ void FurnaceState::smelt() {
     // Refuel if necessary
     if (fuel == 0) { 
         fuel = fuelContainer.getCurrentItem().getFuelLevel(); 
-        fuelContainer.deductOne();
+        
     }
     // If its empty, we set the resultant item to the smelted item.
     if (resultContainer.isEmpty()) { 
@@ -63,7 +63,7 @@ void FurnaceState::smelt() {
     }else {
         resultContainer.addOne();
     }
-
+    fuelContainer.deductOne(); //restarle 1 al que este en el container luego de hacer smelt
     burningContainer.deductOne();
     // If the burningContainer is empty we reset the fuel back to zero.
     burningContainer.isEmpty() ? fuel = 0 : fuel--;
