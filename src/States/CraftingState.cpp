@@ -382,7 +382,7 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.second = 1;
         } 
 
-
+            //NEW ENDER TOOL RECIPES
         //1
         if (grid == vector<int> // Vibranium Sword
             {50, 50, 50,
@@ -431,9 +431,9 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.first = instantiator->getItemFromNumber(61);
             result.second = 1; }
 
-                //Bono: PowerPuffGirls Recipes
-                //1 Blossom Recipe
-            if (grid == vector<int> // Vibranium hoe
+                //Bono: POWERPUFF GIRLS RECIPES
+
+            if (grid == vector<int> // Blossom
                 {71, 66, 71,
                 70, 68, 70,
                 65, 65, 65}
@@ -441,8 +441,7 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.first = instantiator->getItemFromNumber(62);
             result.second = 1; }
 
-                //2 Bubbles Recipe
-            if (grid == vector<int> // Vibranium hoe
+            if (grid == vector<int> // Bubbles
                 {71, 66, 71,
                 69, 68, 69,
                 65, 65, 65}
@@ -450,29 +449,13 @@ pair<Item, int> CraftingState::getItemFromRecipie(vector<int> grid) {
             result.first = instantiator->getItemFromNumber(63);
             result.second = 1; }
 
-            //2 Buttercup Recipe
-            if (grid == vector<int> // Vibranium hoe
+            if (grid == vector<int> // Buttercup
                 {71, 66, 71,
                 67, 68, 67,
                 65, 65, 65}
             ) {
             result.first = instantiator->getItemFromNumber(64);
             result.second = 1; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         return result;    
 }
