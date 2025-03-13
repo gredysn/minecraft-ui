@@ -55,6 +55,7 @@ void ofApp::mousePressed(int x, int y, int button) {
                 }
                 else if (stateButton.getTargetState() == "battle") {
                     this->currentState = battleState;
+                    relaxingMusic.stop(); // New action added so that the music stops once you are in the Battle State.
                 }
                 stateButton.playSoundEffect();
             }
@@ -62,7 +63,9 @@ void ofApp::mousePressed(int x, int y, int button) {
     }
 }
 void ofApp::update() { 
-    if (!relaxingMusic.isPlaying()) relaxingMusic.play();
+    if (currentState != battleState && !relaxingMusic.isPlaying()) {  // New condition was added so that the main music only plays when you are not in the Battle State.
+        relaxingMusic.play();
+    }
         currentState->update();
     }
 void ofApp::draw() { currentState->draw();}
