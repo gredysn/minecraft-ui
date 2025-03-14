@@ -25,7 +25,7 @@ bool FurnaceState::canSmelt() {
         // aquí va un if else statement
         // para que no (smelt infinitely)
         //The burning container must not be empty.//The result container must not be full.
-        if (burningContainer.isEmpty() && resultContainer.isMaxed()){
+        if (burningContainer.isEmpty() || resultContainer.isMaxed()){
             return false;
         }
         //There must be fuel available. Either in the furnace's fuel integer variable, or stored in the fuel container's item.
@@ -34,7 +34,7 @@ bool FurnaceState::canSmelt() {
         }
         //If the result container is not empty, it must contain the same type of item as the resultant item from smelting.
         Item smeltableItems = burningContainer.getCurrentItem();
-        if(!resultContainer.isEmpty() && resultContainer.getCurrentItem() != smeltableItems){
+        if(!resultContainer.isEmpty() && resultContainer.getCurrentItem().getItemNumber() != getResultantItemNumber(burningContainer.getCurrentItem())){
             return false;
         }
         return true; 
