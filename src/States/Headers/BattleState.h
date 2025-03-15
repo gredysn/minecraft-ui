@@ -14,8 +14,6 @@ class BattleState : public State {
         vector<int> ppg; ///< Holds the numbers of all PowerPuff Girls.
 
         enum SoundState {     ///< Assigned names to integer values. This makes switch case in BattleState.cpp easier to read.
-            PpgIntroAudio,
-            HimIntroAudio,
             ComeOverHere,
             PpgTheme,
             None
@@ -29,6 +27,13 @@ class BattleState : public State {
         ofSoundPlayer ppgTheme;  ///< PowerPuff Girls Theme Song.
         SoundState currentSoundState = None; ///< Default integer.
 
+        ofImage himIntro; ///< HIM's intro
+        ofImage battleScreen; ///< Battle Screen image
+        ofImage victoryScreen; ///< Victory Screen image
+
+        bool shouldDrawBattleScreen;
+        bool shouldDrawHimIntro;
+
     public:
         /**
          * @brief Constructs a FurnaceState object with a player and an item handler pointer.
@@ -36,6 +41,8 @@ class BattleState : public State {
          * @param instantiator Item handler pointer.
          */
         BattleState(Player* player, ItemHandler* instantiatr);
+
+        int villainHealth = 100;  // Villain's health.
 
         /**
          * @brief Verifies if item placed is a PowerPuff Girl.
@@ -65,9 +72,6 @@ class BattleState : public State {
          * @brief Handles damage done to villain.
          */
         void attack();
-
-        int villainHealth = 3;  // Villain's health.
-        int getVillainHealth() {return villainHealth;} //Getter for villain's health.
 
         /**
          * @brief Updates the state. Mandatory unused implementation.
