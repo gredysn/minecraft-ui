@@ -12,8 +12,8 @@ Don't forget that you must also fill out an evaluation form in Moodle to conside
 
 ## Grading
 
-443-22-1138 Casielle Lanauze Carrión casielle.lanauze@upr.edu
-843214571 Gredys N. Colón Ramos gredys.colon@upr.edu
+ Casielle Lanauze Carrión casielle.lanauze@upr.edu
+ Gredys N. Colón Ramos gredys.colon@upr.edu
 
 Any project that doesn't compile will receive a 0.
 
